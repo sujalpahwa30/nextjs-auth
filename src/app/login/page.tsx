@@ -49,6 +49,8 @@ export default function LoginPage() {
                 id="email"
                 type="text"
                 value={user.email}
+                onChange={(e) => setUser({...user, email: e.target.value})}
+                placeholder="email"
             />
             <label htmlFor="password">password</label>
             <input 
